@@ -6,7 +6,7 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 30rem;
+  gap: 25rem;
   align-items: center;
 }
 
@@ -73,20 +73,25 @@
 }
 
 @media screen and (max-width: 650px) {
-  
   .introducao {
     grid-template-columns: 1fr;
     gap: 15rem;
   }
 
   .introducao h1 {
-  text-align: center;
+  
+    text-align: center;
   }
 
   .introducao h1::before {
-  width: 40px;
+  display: none;
   }
-  
+
+  .introducao p{
+    display: block;
+    text-align: center;
+  }
+
   .introducao img {
     display: none;
   }

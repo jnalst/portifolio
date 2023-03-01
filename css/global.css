@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap");
 
+html{
+  scroll-behavior: smooth;
+}
+
 :root {
   font-size: 62.5%;
   /* 1 rem = 10px */
@@ -27,4 +31,31 @@ ul {
 img {
   max-width: 100%;
   display: block;
+}
+
+.subtitulo {
+  font-size: 11rem;
+  line-height: 1;
+  text-transform: uppercase;
+  word-break: break-all;
+  max-width: 4ch;
+}
+
+
+@media screen and (max-width: 950px){
+
+  .subtitulo {
+  font-size: 3.5rem;
+  text-transform: capitalize;
+  max-width: initial;
+  }
+}
+
+@media screen and (max-width: 476px){
+
+  .introducao{
+
+    padding: 0rem;
+  }
+
 }
